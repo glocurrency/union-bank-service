@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.1](https://www.github.com/glocurrency/union-bank-service/compare/v0.2.0...v0.2.1) (2022-03-21)
+
+
+### Bug Fixes
+
+* use updated api client ([c46976f](https://www.github.com/glocurrency/union-bank-service/commit/c46976faf1830efd88067b20774cf68571e67a50))
+
 ## [0.2.0](https://www.github.com/glocurrency/union-bank-service/compare/v0.1.0...v0.2.0) (2022-03-21)
 
 
