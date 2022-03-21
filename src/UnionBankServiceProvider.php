@@ -3,6 +3,7 @@
 namespace GloCurrency\UnionBank;
 
 use Illuminate\Support\ServiceProvider;
+use GloCurrency\UnionBank\Console\FetchTransactionsUpdateCommand;
 use GloCurrency\UnionBank\Config;
 use BrokeYourBike\UnionBank\Interfaces\ConfigInterface;
 
@@ -28,6 +29,7 @@ class UnionBankServiceProvider extends ServiceProvider
     {
         $this->configure();
         $this->bindConfig();
+        $this->registerCommands();
     }
 
     /**
@@ -79,6 +81,20 @@ class UnionBankServiceProvider extends ServiceProvider
             $this->publishes([
                 __DIR__.'/../database/migrations' => $this->app->databasePath('migrations'),
             ], 'union-bank-migrations');
+        }
+    }
+
+    /**
+     * Register the package's commands.
+     *
+     * @return void
+     */
+    protected function registerCommands()
+    {
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                FetchTransactionsUpdateCommand::class,
+            ]);
         }
     }
 }
