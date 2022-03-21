@@ -28,7 +28,6 @@ abstract class FeatureTestCase extends TestCase
     {
         // we are using default user migration to store fixtures
         $this->loadLaravelMigrations();
-
         $this->loadMigrationsFrom(__DIR__ . '/Database/Migrations');
     }
 }
