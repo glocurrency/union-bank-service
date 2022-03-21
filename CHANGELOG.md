@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://www.github.com/glocurrency/union-bank-service/compare/v0.1.0...v0.2.0) (2022-03-21)
+
+
+### Features
+
+* add fetch command ([0d04e5d](https://www.github.com/glocurrency/union-bank-service/commit/0d04e5d0d0c22c26fe8e750440ad0c2e59baffd1))
+
 ## 0.1.0 (2022-03-21)
 
 
