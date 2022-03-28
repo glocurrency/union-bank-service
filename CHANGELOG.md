@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.2](https://www.github.com/glocurrency/union-bank-service/compare/v0.2.1...v0.2.2) (2022-03-28)
+
+
+### Bug Fixes
+
+* use proper signature for command ([fa1593c](https://www.github.com/glocurrency/union-bank-service/commit/fa1593c29beaa53e441d2da34eaa031a792c908c))
+
 ### [0.2.1](https://www.github.com/glocurrency/union-bank-service/compare/v0.2.0...v0.2.1) (2022-03-21)
 
 
