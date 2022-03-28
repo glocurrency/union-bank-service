@@ -14,7 +14,7 @@ class FetchTransactionsUpdateCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'globus:fetch-update';
+    protected $signature = 'union-bank:fetch-update';
 
     /**
      * The console command description.

@@ -35,7 +35,7 @@ class FetchTransactionsUpdateCommandTest extends FeatureTestCase
         $transaction = Transaction::factory()->create();
         $transaction->delete();
 
-        $this->artisan('globus:fetch-update')
+        $this->artisan('union-bank:fetch-update')
             ->expectsOutput('You do not have any unfinished UnionBank/Transaction')
             ->assertExitCode(0);
 
@@ -54,7 +54,7 @@ class FetchTransactionsUpdateCommandTest extends FeatureTestCase
             'state_code' => $stateCode,
         ]);
 
-        $this->artisan('globus:fetch-update')
+        $this->artisan('union-bank:fetch-update')
             ->assertExitCode(0);
 
         Bus::assertDispatchedTimes(FetchTransactionUpdateJob::class, $dispatchCount);
