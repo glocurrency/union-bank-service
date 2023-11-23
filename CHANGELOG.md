@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.0](https://www.github.com/glocurrency/union-bank-service/compare/v0.2.3...v0.3.0) (2023-11-23)
+
+
+### Features
+
+* account invalid ([60a2fc3](https://www.github.com/glocurrency/union-bank-service/commit/60a2fc304c927f4a8ced47e7118547343ab19a28))
+
+
+### Bug Fixes
+
+* update union bank client ([ec673a1](https://www.github.com/glocurrency/union-bank-service/commit/ec673a1b5c1e39c15d71f8104e7497a192a6b39a))
+
 ### [0.2.3](https://www.github.com/glocurrency/union-bank-service/compare/v0.2.2...v0.2.3) (2023-05-28)
 
 
