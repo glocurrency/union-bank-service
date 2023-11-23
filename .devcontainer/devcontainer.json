@@ -1,7 +1,12 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/php
 {
-	"name": "union-bank-service",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/php:0-8.1"
+    "name": "union-bank-service",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": { 
+            "VARIANT": "8.1",
+            "NODE_VERSION": "none"
+        }
+    }
 }

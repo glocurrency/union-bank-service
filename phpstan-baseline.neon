@@ -1,6 +1,11 @@
 parameters:
 	ignoreErrors:
 		-
+			message: "#^Call to an undefined static method GloCurrency\\\\UnionBank\\\\Models\\\\Transaction\\:\\:where\\(\\)\\.$#"
+			count: 1
+			path: src/Console/FetchTransactionsUpdateCommand.php
+
+		-
 			message: "#^Cannot cast mixed to string\\.$#"
 			count: 2
 			path: src/Helpers/RecipientFactory.php

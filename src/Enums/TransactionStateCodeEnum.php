@@ -30,6 +30,7 @@ enum TransactionStateCodeEnum: string
             ErrorCodeEnum::SUCCESS => TransactionStateCodeEnum::PROCESSING,
             ErrorCodeEnum::FORMAT_ERROR => TransactionStateCodeEnum::API_ERROR,
             ErrorCodeEnum::SYSTEM_MALFUNCTION => TransactionStateCodeEnum::API_ERROR,
+            ErrorCodeEnum::RECIPIENT_ACCOUNT_INVALID => TransactionStateCodeEnum::RECIPIENT_ACCOUNT_VALIDATION_FAILED,
         };
     }
 
