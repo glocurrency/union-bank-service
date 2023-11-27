@@ -39,7 +39,6 @@ enum TransactionStateCodeEnum: string
             ErrorCodeEnum::HASH_VALUE_INVALID => TransactionStateCodeEnum::API_ERROR,
             ErrorCodeEnum::DUPLICATE_TRANSACTION_PIN => TransactionStateCodeEnum::API_ERROR,
             ErrorCodeEnum::MERCHANT_CODE_INVALID => TransactionStateCodeEnum::API_ERROR,
-            ErrorCodeEnum::OTHERS_TYPES_OF_ERRORS => TransactionStateCodeEnum::API_ERROR,
         };
     }
 
