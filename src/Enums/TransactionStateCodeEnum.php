@@ -28,9 +28,18 @@ enum TransactionStateCodeEnum: string
     {
         return match ($errorCode) {
             ErrorCodeEnum::SUCCESS => TransactionStateCodeEnum::PROCESSING,
-            ErrorCodeEnum::FORMAT_ERROR => TransactionStateCodeEnum::API_ERROR,
-            ErrorCodeEnum::SYSTEM_MALFUNCTION => TransactionStateCodeEnum::API_ERROR,
+            ErrorCodeEnum::PROCESSED => TransactionStateCodeEnum::PROCESSING,
             ErrorCodeEnum::RECIPIENT_ACCOUNT_INVALID => TransactionStateCodeEnum::RECIPIENT_ACCOUNT_VALIDATION_FAILED,
+            ErrorCodeEnum::FORMAT_ERROR => TransactionStateCodeEnum::API_ERROR,
+            ErrorCodeEnum::OTHERS_TYPES_OF_ERRORS => TransactionStateCodeEnum::API_ERROR,
+            ErrorCodeEnum::BENEFICIARY_AND_ORIGINAL_AMOUNT_MUST_BE_SAME => TransactionStateCodeEnum::API_ERROR,
+            ErrorCodeEnum::UNPROCESSIBLE_REQUEST => TransactionStateCodeEnum::API_ERROR,
+            ErrorCodeEnum::MISMATCHED_OR_NOT_TRANSFERABLE_CURRENCIES => TransactionStateCodeEnum::API_ERROR,
+            ErrorCodeEnum::CANNOT_TRANSFER_NGN_TO_A_NON_NGN_ACCOUNT => TransactionStateCodeEnum::API_ERROR,
+            ErrorCodeEnum::HASH_VALUE_INVALID => TransactionStateCodeEnum::API_ERROR,
+            ErrorCodeEnum::DUPLICATE_TRANSACTION_PIN => TransactionStateCodeEnum::API_ERROR,
+            ErrorCodeEnum::MERCHANT_CODE_INVALID => TransactionStateCodeEnum::API_ERROR,
+            ErrorCodeEnum::OTHERS_TYPES_OF_ERRORS => TransactionStateCodeEnum::API_ERROR,
         };
     }
 
