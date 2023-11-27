@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.4.1](https://www.github.com/glocurrency/union-bank-service/compare/v0.4.0...v0.4.1) (2023-11-27)
+
+
+### Bug Fixes
+
+* extra enum ([5d7086d](https://www.github.com/glocurrency/union-bank-service/commit/5d7086d0e684a13bf99ebf3db9833cc3d370389f))
+
 ## [0.4.0](https://www.github.com/glocurrency/union-bank-service/compare/v0.3.1...v0.4.0) (2023-11-27)
 
 
